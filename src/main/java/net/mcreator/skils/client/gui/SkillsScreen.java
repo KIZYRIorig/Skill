@@ -6,6 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.skils.world.inventory.SkillsMenu;
@@ -18,6 +19,7 @@ public class SkillsScreen extends AbstractContainerScreen<SkillsMenu> implements
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
+	ImageButton imagebutton_sdf;
 
 	public SkillsScreen(SkillsMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -70,5 +72,8 @@ public class SkillsScreen extends AbstractContainerScreen<SkillsMenu> implements
 	@Override
 	public void init() {
 		super.init();
+		imagebutton_sdf = new ImageButton(this.leftPos + 13, this.topPos + 11, 130, 67, 0, 0, 67, ResourceLocation.parse("skils:textures/screens/atlas/imagebutton_sdf.png"), 130, 134, e -> {
+		});
+		this.addRenderableWidget(imagebutton_sdf);
 	}
 }

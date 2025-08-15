@@ -9,7 +9,19 @@
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
-    "components": [],
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_sdf",
+          "image": "sdf.png",
+          "hoveredImage": "pp.png",
+          "x": 77,
+          "y": 46,
+          "locked": false
+        }
+      }
+    ],
     "gridSettings": {
       "sx": 18,
       "sy": 18,
