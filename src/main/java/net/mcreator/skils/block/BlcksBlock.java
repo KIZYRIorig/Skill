@@ -2,6 +2,9 @@ package net.mcreator.skils.block;
 
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -31,7 +34,7 @@ import io.netty.buffer.Unpooled;
 
 public class BlcksBlock extends Block {
 	public BlcksBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_BRICKS).strength(-1, 3600000).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
+		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_BRICKS).strength(-1, 3600000).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
 	}
 
 	@Override
@@ -42,8 +45,18 @@ public class BlcksBlock extends Block {
 	}
 
 	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+		return true;
+	}
+
+	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override

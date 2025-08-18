@@ -1,8 +1,9 @@
 {
-  "parent": "block/cube_all",
+  "parent": "skils:custom/statue",
   "textures": {
-    "all": "skils:block/_statya",
-    "particle": "skils:block/_statya"
+    "all": "minecraft:block/honeycomb_block",
+    "particle": "minecraft:block/gilded_blackstone",
+    "0": "skils:block/texture"
   },
   "render_type": "solid"
 }

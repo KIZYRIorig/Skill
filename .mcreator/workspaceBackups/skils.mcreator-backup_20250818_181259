@@ -8,11 +8,11 @@
       "registry_name": "blcks",
       "metadata": {
         "files": [
-          "src/main/resources/assets/skils/blockstates/blcks.json",
           "src/main/java/net/mcreator/skils/block/BlcksBlock.java",
-          "src/main/resources/assets/skils/models/block/blcks.json",
           "src/main/resources/data/skils/loot_tables/blocks/blcks.json",
-          "src/main/resources/assets/skils/models/item/blcks.json"
+          "src/main/resources/assets/skils/models/block/blcks.json",
+          "src/main/resources/assets/skils/models/item/blcks.json",
+          "src/main/resources/assets/skils/blockstates/blcks.json"
         ]
       }
     },
@@ -28,40 +28,6 @@
           "src/main/java/net/mcreator/skils/world/inventory/SkillsMenu.java"
         ]
       }
-    },
-    {
-      "name": "BlcksPriShchielchkiePKMPoBloku",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blcks_pri_shchielchkie_pkm_po_bloku",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/skils/procedures/BlcksPriShchielchkiePKMPoBlokuProcedure.java"
-        ]
-      }
     }
   ],
   "variable_elements": [],
@@ -70,19 +36,20 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "block.skils.blcks": "Blcks",
+      "block.skils.blcks": "Статуя Прокачки",
       "block.skils.blcks.description_0": "",
       "block.skils.blcks.description_1": ""
     }
   },
   "metadata": {
     "files": [
-      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/skils/SkilsMod.java",
+      "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/skils/init/SkilsModScreens.java",
+      "src/main/java/net/mcreator/skils/init/SkilsModTabs.java",
       "src/main/java/net/mcreator/skils/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/skils/init/SkilsModMenus.java",
+      "src/main/java/net/mcreator/skils/init/SkilsModScreens.java",
       "src/main/java/net/mcreator/skils/init/SkilsModBlocks.java",
       "src/main/java/net/mcreator/skils/init/SkilsModItems.java"
     ]

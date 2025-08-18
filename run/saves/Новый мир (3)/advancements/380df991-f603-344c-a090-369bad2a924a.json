@@ -1,0 +1,16 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-08-18 18:13:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:bamboo_jungle": "2025-08-18 18:13:11 +0700",
+      "minecraft:stony_shore": "2025-08-18 18:13:16 +0700"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}
