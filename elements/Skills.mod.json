@@ -7,16 +7,113 @@
     "height": 190,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": false,
-    "doesPauseGame": true,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
     "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_showxp",
+          "text": {
+            "fixedValue": "",
+            "name": "Showxp"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 40,
+          "y": 198,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_battlelvlshow",
+          "text": {
+            "fixedValue": "",
+            "name": "Battlelvlshow"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 272,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_pixilframe0",
+          "image": "pixil-frame-0.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Battlelvlup"
+          },
+          "x": 257,
+          "y": 34,
+          "locked": false
+        }
+      },
       {
         "type": "image",
         "data": {
-          "image": "Group 1-2.png",
-          "use1Xscale": false,
-          "x": 34,
-          "y": 25,
+          "image": "stand_gui.png",
+          "use1Xscale": true,
+          "x": 35,
+          "y": 24,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_boi",
+          "text": "Бой",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Fightopen"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 54,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_showskillpoint",
+          "text": {
+            "fixedValue": "",
+            "name": "Showskillpoint"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 307,
+          "y": 193,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_pokupka_skill_pointa",
+          "text": "Покупка Скилл поинта",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Buyskillpoint"
+          },
+          "width": 129,
+          "height": 20,
+          "x": 258,
+          "y": 168,
           "locked": false
         }
       }

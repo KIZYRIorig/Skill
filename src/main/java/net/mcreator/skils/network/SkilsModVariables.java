@@ -87,7 +87,11 @@ public class SkilsModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "skils_mapvars";
-		public double Xp = 0;
+		public double battle_lvl = 1.0;
+		public double custom_xp = 0.0;
+		public double Mining_lvl = 1.0;
+		public double skill_fight1 = 0;
+		public double Skill_Point = 0.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -96,12 +100,20 @@ public class SkilsModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			Xp = nbt.getDouble("Xp");
+			battle_lvl = nbt.getDouble("battle_lvl");
+			custom_xp = nbt.getDouble("custom_xp");
+			Mining_lvl = nbt.getDouble("Mining_lvl");
+			skill_fight1 = nbt.getDouble("skill_fight1");
+			Skill_Point = nbt.getDouble("Skill_Point");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.putDouble("Xp", Xp);
+			nbt.putDouble("battle_lvl", battle_lvl);
+			nbt.putDouble("custom_xp", custom_xp);
+			nbt.putDouble("Mining_lvl", Mining_lvl);
+			nbt.putDouble("skill_fight1", skill_fight1);
+			nbt.putDouble("Skill_Point", Skill_Point);
 			return nbt;
 		}
 

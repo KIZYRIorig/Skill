@@ -16,6 +16,10 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.skils.world.inventory.SkillsMenu;
+import net.mcreator.skils.world.inventory.ShotingMenu;
+import net.mcreator.skils.world.inventory.MiningMenu;
+import net.mcreator.skils.world.inventory.IntelektMenu;
+import net.mcreator.skils.world.inventory.FightMenu;
 import net.mcreator.skils.network.MenuStateUpdateMessage;
 import net.mcreator.skils.SkilsMod;
 
@@ -24,6 +28,10 @@ import java.util.Map;
 public class SkilsModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, SkilsMod.MODID);
 	public static final RegistryObject<MenuType<SkillsMenu>> SKILLS = REGISTRY.register("skills", () -> IForgeMenuType.create(SkillsMenu::new));
+	public static final RegistryObject<MenuType<FightMenu>> FIGHT = REGISTRY.register("fight", () -> IForgeMenuType.create(FightMenu::new));
+	public static final RegistryObject<MenuType<IntelektMenu>> INTELEKT = REGISTRY.register("intelekt", () -> IForgeMenuType.create(IntelektMenu::new));
+	public static final RegistryObject<MenuType<MiningMenu>> MINING = REGISTRY.register("mining", () -> IForgeMenuType.create(MiningMenu::new));
+	public static final RegistryObject<MenuType<ShotingMenu>> SHOTING = REGISTRY.register("shoting", () -> IForgeMenuType.create(ShotingMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

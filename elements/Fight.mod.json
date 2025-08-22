@@ -1,0 +1,50 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 360,
+    "height": 190,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skill1111",
+          "image": "skill1111.png",
+          "hoveredImage": "skill1111.png",
+          "onClick": {
+            "name": "Fight1"
+          },
+          "x": 55,
+          "y": 94,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_s_shansom_10_poslie_ubiistva_daiot",
+          "text": {
+            "fixedValue": "С шансом 10% после убийства даёт эффект силы на 30сек"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 58,
+          "y": 122,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

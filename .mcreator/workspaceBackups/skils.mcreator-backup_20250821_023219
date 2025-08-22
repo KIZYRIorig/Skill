@@ -1,0 +1,503 @@
+{
+  "mod_elements": [
+    {
+      "name": "Blcks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blcks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skils/block/BlcksBlock.java",
+          "src/main/resources/assets/skils/models/block/blcks.json",
+          "src/main/resources/assets/skils/blockstates/blcks.json",
+          "src/main/resources/data/skils/loot_tables/blocks/blcks.json",
+          "src/main/resources/assets/skils/models/item/blcks.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "Skills",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skills",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skils/client/gui/SkillsScreen.java",
+          "src/main/java/net/mcreator/skils/network/SkillsButtonMessage.java",
+          "src/main/java/net/mcreator/skils/world/inventory/SkillsMenu.java"
+        ]
+      },
+      "path": "~/Gui"
+    },
+    {
+      "name": "Giveexp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giveexp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/GiveexpProcedure.java"
+        ]
+      },
+      "path": "~/Give_Xp"
+    },
+    {
+      "name": "Showxp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "showxp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/ShowxpProcedure.java"
+        ]
+      },
+      "path": "~/Show"
+    },
+    {
+      "name": "Killgivexp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "killgivexp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/KillgivexpProcedure.java"
+        ]
+      },
+      "path": "~/Give_Xp"
+    },
+    {
+      "name": "Fight",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skils/client/gui/FightScreen.java",
+          "src/main/java/net/mcreator/skils/world/inventory/FightMenu.java"
+        ]
+      },
+      "path": "~/Gui"
+    },
+    {
+      "name": "Fightopen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fightopen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/FightopenProcedure.java"
+        ]
+      },
+      "path": "~/Open_Skills"
+    },
+    {
+      "name": "Intelekt",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intelekt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skils/client/gui/IntelektScreen.java",
+          "src/main/java/net/mcreator/skils/world/inventory/IntelektMenu.java"
+        ]
+      },
+      "path": "~/Gui"
+    },
+    {
+      "name": "Mining",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skils/client/gui/MiningScreen.java",
+          "src/main/java/net/mcreator/skils/world/inventory/MiningMenu.java"
+        ]
+      },
+      "path": "~/Gui"
+    },
+    {
+      "name": "Shoting",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skils/world/inventory/ShotingMenu.java",
+          "src/main/java/net/mcreator/skils/client/gui/ShotingScreen.java"
+        ]
+      },
+      "path": "~/Gui"
+    },
+    {
+      "name": "Intelektopen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intelektopen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/IntelektopenProcedure.java"
+        ]
+      },
+      "path": "~/Open_Skills"
+    },
+    {
+      "name": "Miningopen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miningopen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/MiningopenProcedure.java"
+        ]
+      },
+      "path": "~/Open_Skills"
+    },
+    {
+      "name": "Shotingopen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shotingopen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/ShotingopenProcedure.java"
+        ]
+      },
+      "path": "~/Open_Skills"
+    },
+    {
+      "name": "Battlelvlshow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battlelvlshow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/BattlelvlshowProcedure.java"
+        ]
+      },
+      "path": "~/Show"
+    },
+    {
+      "name": "Battlelvlup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battlelvlup",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/BattlelvlupProcedure.java"
+        ]
+      },
+      "path": "~/Level_Up"
+    },
+    {
+      "name": "Fight1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fight_1",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/Fight1Procedure.java"
+        ]
+      },
+      "path": "~/Skills_Fight"
+    },
+    {
+      "name": "Showskillpoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "showskillpoint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/ShowskillpointProcedure.java"
+        ]
+      },
+      "path": "~/Show"
+    },
+    {
+      "name": "Buyskillpoint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buyskillpoint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/skils/procedures/BuyskillpointProcedure.java"
+        ]
+      },
+      "path": "~/Level_Up"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "battle_lvl",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    },
+    {
+      "name": "custom_xp",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "Mining_lvl",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    },
+    {
+      "name": "Skill_Point",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.skils.blcks": "Статуя Прокачки",
+      "block.skils.blcks.description_0": "",
+      "block.skils.blcks.description_1": "",
+      "gui.skils.fight.button_sprotsmien": "Спротсмен",
+      "gui.skils.skills.button_boi": "Бой",
+      "gui.skils.shoting.label_tut_budut_navyki_dlia_strielby_iz": "тут будут навыки для стрельбы из лука ",
+      "gui.skils.mining.label_tut_budut_skilly_dlia_ghornogho_diel": "Тут будут скиллы для горного дела",
+      "gui.skils.intelekt.label_tut_budut_navyki_dlia_intieliekta": "тут будут навыки для интелекта ",
+      "gui.skils.fight.label_tut_budut_navyki_dlia_boia": "тут будут навыки для боя",
+      "gui.skils.skills.button_intieliekt": "интелект ",
+      "gui.skils.skills.button_gornoie_dielo": "Горное дело ",
+      "gui.skils.skills.button_strielba": "Стрельба",
+      "gui.skils.skills.button_empty": "",
+      "gui.skils.skills.button_prokachat_boi": "Прокачать Бой",
+      "gui.skils.skills.tooltip_pozvoliaiet_bieghat_na_10_bystrieie": "Позволяет бегать на 10% быстрее если на вас не надета броня",
+      "gui.skils.fight.tooltip_s_shansom_10_poslie_ubiistva_daiot": "С шансом 10% после убийства даёт эффект силы на 30сек",
+      "gui.skils.skills.button_pokupka_skill_pointa": "Покупка Скилл поинта"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/skils/init/SkilsModTabs.java",
+      "src/main/java/net/mcreator/skils/SkilsMod.java",
+      "src/main/java/net/mcreator/skils/network/SkilsModVariables.java",
+      "src/main/java/net/mcreator/skils/init/SkilsModScreens.java",
+      "src/main/java/net/mcreator/skils/init/SkilsModMenus.java",
+      "src/main/java/net/mcreator/skils/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/skils/init/SkilsModBlocks.java",
+      "src/main/java/net/mcreator/skils/init/SkilsModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Block",
+        "children": []
+      },
+      {
+        "name": "Gui",
+        "children": []
+      },
+      {
+        "name": "Level_Up",
+        "children": []
+      },
+      {
+        "name": "Show",
+        "children": []
+      },
+      {
+        "name": "Give_Xp",
+        "children": []
+      },
+      {
+        "name": "Open_Skills",
+        "children": []
+      },
+      {
+        "name": "Skills_Fight",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "skils",
+    "modName": "Skils",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.skils"
+  },
+  "mcreatorVersion": 202500228610
+}
